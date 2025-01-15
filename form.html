@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+           <a href="index.html">На главную</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+          <h2>Регистрация нового пользователя</h2>
+
+          <form action="#" method="post">
+            <fieldset>
+                <legend>Личная информация</legend>
+                <div>
+                    <label for="name">Имя <span style="color: red;">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Введите имя" required>
+                </div>
+                <div>
+                    <label for="birthdate">Дата рождения</label>
+                    <input type="date" id="birthdate" name="birthdate" placeholder="дд.мм.гггг">
+                </div>
+                <div>
+                    <label>Пол</label>
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male">Мужской
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female">Женский
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Контактные данные</legend>
+                <div>
+                    <label for="password">Пароль <span style="color: red;">*</span></label>
+                    <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+                </div>
+                <div>
+                    <label for="email">Email <span style="color: red;">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+                 <div>
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+                </div>
+                  <div>
+                      <label>Удобное время для связи:</label>
+                      <select name="time" id="time">
+                           <option value="morning">Утро</option>
+                           <option value="day">День</option>
+                           <option value="evening">Вечер</option>
+                           <option value="night">Ночь</option>
+                       </select>
+                  </div>
+            </fieldset>
+                <button type="submit" class="submit-button">
+                    Зарегистрироваться
+                    <span class="icon">→</span>
+                </button>
+                 <button type="reset" class="reset-button">
+                    Очистить
+                    <span class="icon">↺</span>
+                 </button>
+        </form>
+        </section>
+    </main>
+
+    <footer>
+         <p>&copy; 2024 Веб-страница. Все права защищены.</p>
+    </footer>
+</body>
+</html>
